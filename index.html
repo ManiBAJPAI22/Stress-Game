@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stress Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" onclick="toggleTheme()" />
+        <span class="slider"></span>
+      </label>
+    </div>
+    <main>
+      <div id="game-info">
+        <center>
+          <h1>Hello Human !!</h1>
+          <br />
+          <p>
+            <strong>Instructions to play this game:</strong>
+            <br /><br />
+            Welcome to the ultimate challenge! To conquer this game, all you
+            need to do is master the art of pressing the spacebar. Keep those
+            bullets flying and watch the chaos unfold! <br />
+            The real test begins now – let's see how long you can defy the odds
+            and emerge as the ultimate survivor! <br />Get ready to push your
+            limits and embrace the challenge!
+          </p>
+        </center>
+      </div>
+
+      <div id="game-container">
+        <script src="sketch.js"></script>
+        <div id="start-button">
+          <button onclick="startGame()" class="button button1">
+            Start Game
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
